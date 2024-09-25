@@ -1,0 +1,80 @@
+
+:root {
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+
+.music-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    align-items: center;
+}
+
+.contenedor-listas {
+    background:var(--second-bg-color);
+    display: flex;
+    flex-flow: row wrap; 
+    max-width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    margin:0 auto;
+}
+
+.listas {
+    background: #59cbe8;
+    display: block;
+    width: 25%;
+    height: 50vh;
+    margin: 10px;
+    line-height: 1.5;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.listas ol {
+    padding-left: 30px;
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+.listas h2 {
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-size: 1.6rem;
+}
+
+/*Codigo ajustado para navegadores y dispositivos moviles */
+
+/* Estilos para móviles */
+@media only screen and (max-width: 600px) {
+    .listas {
+        width: 100%;
+    }
+
+    .music-contenedor h2 {
+        width: 100%;
+    }
+
+    .music-player {
+        width:100%;
+    }
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .listas {
+        width: 50%;
+    }
+
+    .music-contenedor h2 {
+        width: 50%;
+    }
+
+    .music-player {
+        width: 50%;
+    }
+}
